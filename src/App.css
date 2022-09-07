@@ -1,0 +1,44 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'handlee';
+    font-weight: bolder;
+  }
+  :root{
+    --main-bakground:#002938;
+    --nd-bakground: #12635f;
+    --font-color: gainsboro;
+    --color-main: #117181;
+    --color-nd: #002938;
+    --color-rd: #00394f;
+  }
+  a{
+    text-decoration: none;
+    font-family: inherit;
+    color: inherit;
+    font-size: inherit;
+  }
+  body {
+    background-color: var(--main-bakground);
+    padding-top: 70px;
+    margin: auto;
+    transition: 1s;
+  }
+  .App{
+    background-color: var(--main-bakground);
+  }
+  .Body{
+    max-width: 1100px;
+    margin: auto;
+  }
+  @font-face {
+    font-family: 'handlee';
+    src: url('./assets/fonts/Handlee-Regular.ttf');
+  }
+  @font-face {
+    font-family: 'agency';
+    src: url('./assets/fonts/AGENCYB.TTF');
+  }
+  
+  

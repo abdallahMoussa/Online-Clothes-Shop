@@ -1,0 +1,130 @@
+.searchCont{
+    width: 500px;
+    padding: 5px;
+    display: flex;
+    transition: 1s;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: flex-end;
+}
+.inputSearch{
+    width: 70%;
+    outline: none;
+    height: 40px;
+    border-radius: 7px;
+    border: 2px solid var(--color-main);
+    font-size: 16pt;
+    padding: 3px 10px;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans Unicode';
+    box-shadow: 1px 1px 5px black;
+    transition: 1s;
+}
+.inputSearch:focus{
+    width: 95%;
+}
+.inputSearch:focus~ .suggest {
+    width: 93%;
+    height: auto;
+}
+.inputSearch:focus~ .clear{
+    opacity: 1;
+}
+.search{
+    font-size: 16pt;
+    background-color: var(--color-main);
+    width: 50px;
+    padding: 3px;
+    border-radius: 0 6px 6px 0;
+    border: 0px;
+    box-shadow: 1px 1px 2px var(--color-main);
+    height: 38px;
+    margin-left: -50px;
+    cursor: pointer;
+    color: wheat;
+}
+.search:active{
+    opacity: .9;
+    color: black;
+}
+.search span{
+    display:block;
+    font-size: 20pt;
+    transform: rotate(-45deg);
+}
+.suggest{
+    width: 68%;
+    height: 0px;
+    padding: 0px;
+    max-height: 500px;
+    position: absolute;
+    margin-top: 40px;
+    border-radius:5px ;
+    background-color:rgba(0,70,120,.95);
+    z-index: 10;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    overflow: hidden;
+}
+.suggest:active{
+    height: auto;
+}
+.suggest span{
+    transition: .5s;
+    padding-left: 12px;
+    width: 100%;
+}
+
+.suggest span:last-child{
+    margin-bottom: 5px;
+}
+.suggest a{
+    text-decoration: none;
+    color: inherit;
+    width: 100%;
+    display: inline-block;
+}
+.suggest span:hover{
+    background-color: gainsboro;
+    cursor: pointer;
+    transition: .5s;
+    color: var(--color-main);
+}
+.suggest span:first-child{
+    margin-top: 8px;
+}
+.clear{
+    color: gainsboro;
+    position: absolute;
+    right: 70px;
+    top: 10px;
+    font-size: 16pt;
+    cursor: pointer;
+    transition: .5s;
+    opacity: 0;
+}
+.clear:hover{
+    text-shadow: 0 0 1px black;
+    color: darkgray;
+}
+.clear:active{
+    transition: .3s;
+    color: gray;
+    text-shadow: 0 0 5px var(--color-main);
+}
+
+@media screen and (max-width: 800px) {
+    .searchCont{
+        margin: 20px auto ;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .inputSearch{
+        width: 80%;
+    }
+    .suggest{
+        width: 100%;
+    }
+}

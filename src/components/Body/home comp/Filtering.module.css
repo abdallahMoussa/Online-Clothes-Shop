@@ -1,0 +1,101 @@
+.filter{
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    top: 70px;
+    padding: 10px;
+}
+.filterCont{
+    position: relative;
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #c7d2d7;
+    border-radius: 5px;
+    box-shadow: inset 0 0 5px gray;
+    padding: 0 10px 10px ;
+}
+.filterSection{
+    position: relative;
+    padding-left: 10px;
+    height: 145px;
+    margin-bottom: 10px;
+}
+.filterSection:nth-child(2){
+    height: 120px;
+}
+.filterSection:nth-child(3){
+    height: 150px;
+    margin-bottom: 0;
+}
+.filterCont code{
+    display: inline-block;
+    transform: rotate(90deg);
+    font-size: 14pt;
+    padding: 10px ;
+    transition: 1s;
+    font-family: 'agency';
+}
+.filterCont span{
+    cursor: pointer;
+    transition: .5s;
+    color: var(--color-nd);
+    font-size: 16pt;
+    font-family: 'agency';
+    background-color: #c7d2d7;
+    padding-left: 3px;
+    position: relative;
+    z-index: 1;
+}
+.filterCont span:hover{
+    color: var(--color-main);
+}
+.filterCont ul{
+    padding-left: 10px;
+    list-style: none;
+    overflow: hidden;
+    width: 150px;
+    transition: 1s ease-out;
+    height: 0;
+    padding-top: 15px;
+    border-radius: 5px;
+    position: absolute;
+    top:20px ;
+    left: 0px;
+    border: 2px solid var(--color-nd);
+}
+.filterCont ul li {
+    cursor: pointer;
+    color: var(--color-main);
+    font-family: 'agency';
+    font-size: 14pt;
+    line-height: 25px;
+}
+li a {
+    font-size: 12pt;
+    color: var(--color-nd);
+}
+ul input{cursor: pointer;}
+.filterCont ul li:first-child{
+    margin-top: 10px;
+}
+.btFilter{
+    width: 100px;
+    font-size: 16pt;
+    margin:10px auto 0;
+    padding-top: 3px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 0px;
+    transition: .5s;
+    box-shadow:  inset 0 0 5px var(--color-nd);
+}
+.btFilter:hover{
+    color: var(--color-main);
+    box-shadow: inset 0 0 15px var(--color-nd);
+}
+.btFilter:active{
+    transition: 0s;
+    background-color: gray;
+}

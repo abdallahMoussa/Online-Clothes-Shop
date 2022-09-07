@@ -1,0 +1,15 @@
+.stars{
+    display: flex;
+    width: 150px;
+    height: 30px;
+}
+.star{
+    width: 25px;
+    height: 25px;
+}
+.active{
+    fill:var(--color-nd)
+}
+.idle{
+    fill: gainsboro;
+}

@@ -1,0 +1,38 @@
+.colors{
+    display: flex;
+    margin: 5px 0;
+    width: 220px;
+    height: 30px;
+    align-items: center;
+    color: var(--font-color);
+}
+.label{
+    margin: -2px 10px 0 0;
+}
+.colorPanel{
+    height: 100%;
+    width: 100%;
+    margin-left: 10px;
+    display: flex;
+    padding-top: 2px;
+}
+.color{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin: 0 5px;
+    background-color: var(--color);
+    box-shadow: 1px 1px 2px black;
+    cursor: pointer;
+    transition: .5s;
+}
+.color:hover{
+    opacity: .8;
+}
+
+.selected{
+    border-radius: 2px;
+    width: 22px;
+    height: 22px;
+    margin: -1px 4px;
+}

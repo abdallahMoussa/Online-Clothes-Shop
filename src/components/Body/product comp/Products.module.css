@@ -1,0 +1,19 @@
+.products{
+    width: 100%;
+    max-width: 1300px;
+    margin: auto;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    background-color: var(--main-bakground);
+    padding-bottom: 50px;
+}
+.productItems{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    position: relative;
+    left: 250px;
+    max-width: calc(100% - 250px)
+}

@@ -1,0 +1,146 @@
+.payment{
+    width: 100%;
+    min-height: 200px;
+    max-width: 1000px;
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgba(245, 245, 245, .8);
+    box-shadow: inset 0 0 10px darkgray;
+    border-radius: 10px;
+    margin: 30px auto 0;
+    padding: 0 20px;
+    justify-content: space-between;
+}
+.details{
+    display: flex;
+    flex-wrap: wrap;
+    width: 400px;
+    padding: 10px;
+    line-height: 40px;
+    position: relative;
+}
+.detail{
+    width: 100%;
+    width: 600px;
+    font-family: 'agency';
+    font-size: 16pt;
+    color:darkred;
+}
+.detail span{
+    color: var(--color-main);
+    font-family: 'agency';
+    font-size: 18pt;
+}
+.address{
+    width: 300px;
+    padding-top: 10px;
+    position: relative;
+}
+.address select{
+    width: 150px;
+    height: 35px;
+    border-radius: 5px;
+    font-size: 16pt;
+    font-family: 'agency';
+    margin-top: 10px;
+    background-color: gainsboro;
+    transition: .5s;
+}
+option{
+    font-family: 'agency';
+    cursor: pointer;
+}
+
+.phone input{
+    margin-top: 10px ;
+    width: 150px;
+    height: 35px;
+    background-color: gainsboro;
+    border-radius: 5px;
+    border: 0;
+    outline: none;
+    box-shadow: inset 0 0 3px;
+    padding-left: 10px;
+    font-size: 14pt;
+    font-family: 'agency';
+    transition: .5s;
+}
+.phone input::-webkit-outer-spin-button,
+.phone input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.phone input[type=number] {
+  -moz-appearance: textfield;
+}
+.buy{
+    width: 100px;
+    height: 30px;
+    margin: 10px 0;
+    background-color: darkred;
+    opacity: .8;
+    border: 0;
+    outline: none;
+    box-shadow: inset 0 0 3px black;
+    border-radius: 5px;
+    cursor: pointer;
+    color: gray;
+    transition: 1s;
+}
+.buy:hover{
+   opacity: 1;
+   color: gainsboro;
+}
+.buy:active{
+    background-color: rgb(200, 0, 0);
+    transition: 0s;
+}
+.fade{
+   opacity: 0;
+}
+.saleDelivery{
+    width: auto;
+    height: 60px;
+    position: absolute;
+    right: 10px;
+    top: 100px;
+    background-color: gainsboro;
+    padding: 0 5px;
+    border-radius: 5px;
+    border: 2px solid darkred;
+    opacity: .5;
+}
+.saleDelivery span{ 
+    font-size: 18pt;
+    font-family: 'agency' ;
+    word-wrap: break-word;
+    color: red;
+}
+.saleDelivery span::after{
+    content: "Free Delivery";
+    position: absolute;
+    font-size: 14pt;
+    top: 26px;
+    padding: 0 5px;
+    right: 5px;
+    height: 30px;
+    border-bottom: 2px solid gainsboro;
+    color: darkred;
+}
+@media screen and (max-width: 800px) {
+    .payment{
+        justify-content: center;
+    }
+    .details , .address{
+        width: 100%;
+        text-align: center;
+    }
+ 
+}
+@media screen and (max-width: 540px) {
+    .details{
+        text-align: left;
+    }
+}

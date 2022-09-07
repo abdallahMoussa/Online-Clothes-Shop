@@ -1,0 +1,145 @@
+.section{
+    width: 100%;
+    height: auto;
+    padding: 20px 5px;
+    display: flex;
+    margin: 50px 0 ;
+    background-color: rgba(250,250,250,.3);
+    border-radius: 10px;
+    box-shadow: 0 0 100px rgba(0, 0, 0, .5) inset;
+    flex-wrap: wrap;
+    flex-direction: var(--direction);
+    overflow: hidden;
+    position: relative;
+    transition: 3s;
+}   
+
+.img{
+    position: relative;
+    box-sizing: content-box;
+    width: 400px;
+    height: 400px;
+    margin: auto;
+}
+.img img{
+    width: 100%;
+    transition: 1s;
+}
+.texture{
+    width: calc(100% - 450px);
+    min-width: 300px;
+    font-size: 30pt;
+    margin-bottom: 15px;
+    padding: 5% 0px 50px 10px;
+    color: var(--color-main);
+    text-shadow:  1px 1px 1px black;
+    transition: 3s;
+    position: relative;
+    font-size: 3vw;
+
+}
+.texture h1{
+    font-size: 5vw;
+    font-family:Verdana;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: var(--color-nd);
+    letter-spacing: -5px;
+    display: inline ;
+    position: relative;
+
+}
+.texture h1::before{
+    content: '';
+    width: 50px;
+    height: 40px;
+    border-top: 5px solid;
+    border-left: 5px solid;
+    position: absolute;
+    left: -10px;
+    color: darkred;
+}
+
+.texture h1::after{
+    content: '';
+    width: 40px;
+    height: 50px;
+    border-bottom: 5px solid;
+    border-right: 5px solid;
+    position: absolute;
+    right: -18px;
+    bottom: -5px;
+    color: darkred;
+}
+.texture span{
+    display: block;
+    position: relative;
+    width: 250px;
+    float: right;
+    bottom: -20px;
+    font-size: 60pt;
+    font-family: impact;
+    color: darkred;
+}
+.texture span::after{
+    content: ' SALE';
+    font-size: 40pt;
+    color:var(--color-rd);
+}
+
+.texture span::before{
+    content: 'UP TO';
+    font-size: 20pt;
+    color:var(--color-main);
+    position: absolute;
+    left: -40px;
+    top: -15px;
+}
+.texture p{
+    margin-top: 20px;
+    color: var(--font-color);
+}
+.texture > button{
+    text-decoration: none;
+    font-family: 'agency';
+    position: absolute;
+    bottom: -15px;
+    left: 15px;
+    font-weight: 0;
+    font-size: 20pt;
+    text-shadow: none;
+    color: darkred ;
+    border: 0px ;
+    padding:  3px 8px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px inset;
+    cursor: pointer;
+    z-index: 10;
+    transition: .5s;
+
+}
+.texture button:hover{
+    color: white;
+    box-shadow: 0 0 40px darkred inset;
+}
+.texture button:active{
+    color: red;
+}
+.fade{
+    opacity: .1;
+}
+@media screen and (max-width: 800px){
+    .section{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .texture{
+        width: 100%;
+        height: 360px;
+        font-size: 5vw;
+        margin-top: 90px;
+    }
+    .texture h1{
+        font-size: 8vw;
+    }
+}
