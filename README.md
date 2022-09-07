@@ -1,6 +1,6 @@
 # Shopping Home:
 Online-Clothes-Shop
-![image](https://user-images.githubusercontent.com/55410420/188765050-9deb38a4-2ddb-40b7-90fb-afcb00835ddd.png)
+![image](https://user-images.githubusercontent.com/55410420/188766211-6c73d47e-0aee-4bac-9e05-6b923c761935.png)
 
 # Features:
 - Login & Signup.
