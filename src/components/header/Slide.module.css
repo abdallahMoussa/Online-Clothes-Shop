@@ -13,6 +13,7 @@
     transition: all 1s;
     opacity: 1;
     position: relative;
+    transform:scale(.95)
 }
 .texture{
     width: 60%;
